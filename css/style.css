@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 75%;
+}
+
+header{
+    background: linear-gradient(rgba(62, 59, 216, 0.199), white);
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    height: 45vh;
+    margin-left: 3%;
+}
+
+#hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-bottom: 12%;  
+}
+
+.barra{
+    background-color: none;
+    background-color: rgba(51, 53, 192, 0.651);
+    width: 35px;
+    height: 3px;
+    border-radius: 25px;
+    margin-bottom: 10%;
+}
+
+header nav a{
+    display: none;
+}
+
+section{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+section img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    animation: float 5s infinite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+section img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+section a{
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+    margin-top: 1.5%;
+    font-family: 'Lobster', cursive;
+    font-size: 300%;
+}
+
+section p{
+    font-size: 18px;
+    text-align: center;
+    padding: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgba(130, 141, 188, 0.055) ;
+    border-radius: 25px;
+    text-align: justify;
+}
+
+
+@keyframes float{
+    0%{
+        transform: scale(1);
+
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+
+    }
+}
+
+footer{
+    border-top: 0.3px solid rgba(0, 0, 0, 0.315);
+    height: 10%;
+    display: flex;
+    padding-left: 13%;
+    padding-right: 13%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(white, rgba(62, 59, 216, 0.199))
+}
+
+footer img{
+    height: 20px;
+    widows: 20px;
+}
