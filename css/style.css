@@ -234,7 +234,7 @@ footer img{
     
 }
 /* versão desktop */
-@media (min-width: 1000px){
+@media (min-width: 1100px){
 
     header{
         width: 100vw;
@@ -345,6 +345,7 @@ footer img{
     #estrelas{
         margin-top: 100px;
         margin-right: 2%;
+
     }
     
     #imgestrelas{
