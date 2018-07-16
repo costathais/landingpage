@@ -2,10 +2,12 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 75%;
+    overflow-x: hidden;
+
 }
 
 header{
-    background: linear-gradient(rgba(62, 59, 216, 0.199), white);
+    background: linear-gradient(rgba(62, 59, 216, 0.199), rgba(255, 255, 255, 0.9));
     height: 8vh;
     display: flex;
     flex-direction: row;
@@ -38,7 +40,7 @@ header img{
     margin-bottom: 10%;
 }
 
-header nav a{
+#menu{
     display: none;
 }
 
@@ -91,12 +93,18 @@ section p{
     text-align: justify;
 }
 
-
 #imgplanetas {
     display: none;
 }
 
 #imgnebulosas{
+    display: none;
+}
+#imgestrelas{
+    display:none;
+}
+
+video{
     display: none;
 }
 
@@ -121,7 +129,8 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(white, rgba(62, 59, 216, 0.199))
+    background: linear-gradient(white, rgba(62, 59, 216, 0.199));
+    margin-top: 3%;    
 }
 
 footer img{
@@ -130,7 +139,6 @@ footer img{
 }
 
 /* versão tablet */
-
 @media(min-width: 700px){
 
     header{
@@ -224,4 +232,172 @@ footer img{
         margin-left: 0;
     }
     
+}
+/* versão desktop */
+@media (min-width: 1000px){
+
+    header{
+        width: 100vw;
+        height: 120px;
+        margin: 0;
+    }
+
+    header img{
+        height: 400%;
+    }
+    
+    #hamburger{
+        display: none;
+    }
+
+    #menu{
+        display: flex;
+        width: 70vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #menu a{
+        color: rgba(10, 4, 75, 0.726);
+        font-size: 22px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #menu a:hover{
+        opacity: 0.8;
+        transform: scale(1.2);
+    }
+
+    section{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    section img{
+        height: 500px;
+        width: 500px;
+        border-radius: 50%; 
+    }
+    
+    section p{
+        background-color: white;
+        margin-left: 80px;
+        margin-right: 80px;
+        padding: 20px;
+    }
+    
+    section img:hover{
+        opacity: 0.5;
+    }
+    
+    .nomeimg{
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        margin-top: 7px;
+        text-align: center;
+    }
+
+    #planetas{
+        flex-direction: column;
+    }
+    
+    #imgplanetas{
+        display: flex;
+    }   
+
+    #imgplanetas div{
+        margin: 2%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 50px;
+        margin-left: 50px;  
+    }
+    
+    #imgplanetas img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    #galaxias{
+        margin-top: 100px;
+        margin-left: 1%;
+    }
+
+    video {
+        display: flex;
+        width: 50%;
+        height: auto;
+        margin: 0;
+        border-radius: 15px;
+    }
+    
+    #estrelas p{
+        margin: 15px;
+    }
+
+    #estrelas{
+        margin-top: 100px;
+        margin-right: 2%;
+    }
+    
+    #imgestrelas{
+        display: flex;  
+        width: 600px;
+    }
+    
+    #imgestrelas img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    #imgestrelas div{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    #imgnebulosas{
+        display: flex;
+        width: 500px;    
+        justify-content: space-around;
+    }
+
+    #imgnebulosas{
+        display: flex;
+        width: 500px;    
+        justify-content: space-around;
+    }
+
+    #nebulosas{
+        margin-top: 100px;
+    }
+
+    #imgnebulosas img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    #imgnebulosas div{
+        width: 95px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    footer{
+        margin-top: 70px;
+    }
 }
